@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".MostrarDetalles">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Detalles"
+        android:textColor="#19E9F5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegresar2"
+        android:layout_width="143dp"
+        android:layout_height="71dp"
+        android:onClick="regresar"
+        android:text="Regresar"
+        android:textColor="#19E9F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <Button
+        android:id="@+id/btnGuardarObservacion"
+        android:layout_width="172dp"
+        android:layout_height="75dp"
+        android:onClick="guardarObservacion"
+        android:text="Guardar Observacion"
+        android:textColor="#19E9F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="406dp"
+        android:layout_height="294dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNS1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Sensor:"
+                android:textColor="#F42078"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewNombreSensor"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:textColor="#19E9F5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewVS1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor del sensor:"
+                android:textColor="#F42078"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewValorSensor"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textColor="#19E9F5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha y Hora:"
+                android:textColor="#F42078"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewFechaHora"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textColor="#19E9F5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de sensor:"
+                android:textColor="#F42078"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewTipoSensor"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textColor="#19E9F5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion del sensor:"
+                android:textColor="#F42078"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewUbicacionSensor"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textColor="#19E9F5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observacion"
+                android:textColor="#F42078"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextObservacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#19E9F5"
+                android:textSize="24sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
